@@ -1,0 +1,209 @@
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #B5C2CA;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 280px;
+    background-color: #F0F3F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-title {
+    font-size: 1.2rem;
+    color: #465767;
+    margin-bottom: 20px;
+}
+
+/* Profile section in the sidebar */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Profile image */
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+/* Profile name */
+.profile-name {
+    font-size: 1.2rem;
+    color: #465767;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Profile email */
+.profile-email {
+    font-size: 1rem;
+    color: #465767;
+    margin-bottom: 20px;
+}
+
+/* Menu section in the sidebar */
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Menu items in the sidebar */
+.menu-item {
+    background-color: #F0F3F4;
+    color: #465767;
+    border: none;
+    padding: 15px;
+    margin: 5px 0;
+    text-align: center; /* Center-align text */
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center-align text horizontally */
+    align-items: center;     /* Center-align text vertically */
+    font-weight: bold;
+    font-size: medium;
+}
+
+/* Highlight the selected menu item */
+.menu-item.selected {
+    background-color: #465767;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+/* Logout button in the sidebar */
+.logout-button {
+    background-color: #465767;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin-top: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Main content container */
+.main-content-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 10px;
+    width: calc(100% - 300px);
+}
+
+/* Top bar styles */
+.top-bar {
+    background-color: #FFFFFF;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome section in the top bar */
+.welcome-section {
+    font-size: 1.5rem;
+    color: #354f52;
+    font-weight: bold;
+}
+
+/* Welcome name */
+.welcome-name {
+    font-weight: bold;
+    color: #354f52;
+}
+
+/* Search section in the top bar */
+.search-section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Search bar styles */
+.search-bar {
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #B5C2CA;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main content styles */
+.main-content {
+    background-color: #FFFFFF;
+    flex-grow: 1;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Row for venue boxes */
+.venues-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Individual venue box */
+.venue-box {
+    width: 200px;
+    height: 200px;
+    background-color: #B5C2CA;
+    color: #465767;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for venue box */
+.venue-box:hover {
+    transform: scale(1.05);
+}
+
+/* Image inside the venue box */
+.venue-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Venue name */
+.venue-box p {
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: medium;
+}

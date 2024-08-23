@@ -1,0 +1,33 @@
+/* Only styles for elements within the AdminDashboard component */
+.admin-dashboard-container .sidebar {
+    width: 250px;
+    background: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .admin-dashboard-container .sidebar-title {
+    font-size: 24px;
+  }
+  
+  .admin-dashboard-container .profile-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .admin-dashboard-container .menu-item {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #e1e6eb;
+  }
+  
+  .admin-dashboard-container .menu-item.selected {
+    background: #d0d4d9;
+  }
+  
+  .admin-dashboard-container .logout-button {
+    width: 100%;
+    padding: 10px;
+    background: #ff4d4d;
+  }
+  

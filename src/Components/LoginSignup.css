@@ -1,0 +1,116 @@
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-color: #B5C2CA; 
+  }
+  
+  
+  .login-form {
+    background-color: #FFFFFF; 
+    padding: 2rem; 
+    border-radius: 25px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 500px; 
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  
+  .login-form h2 {
+    color: #465767;
+    margin-bottom: 1.5rem;
+    text-align: center; 
+  }
+  
+  
+  .form-group {
+    width: 100%; 
+    margin-bottom: 1rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  
+  .form-group input,
+  .form-group select {
+    width: 100%; 
+    max-width: 450px; 
+    height: 35px; 
+    padding: 0.5rem; 
+    margin-bottom: 1rem; 
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1rem; /* Standard font size */
+    color: #465767; /* Font color for input text */
+    background-color: #EFF1F2; /* Background color for the fields */
+  }
+  
+  /* Styling for select element to show dropdown symbol */
+  .form-group select {
+    appearance: none; /* Remove default styling */
+    background-color: #EFF1F2; /* Same background color as inputs */
+    padding: 0 0.5rem; /* Padding inside select */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); /* Dropdown arrow icon */
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1.5em;
+    height: 35px; /* Same height as other input fields */
+    width: 100%; /* Full width to match other form fields */
+    max-width: 450px; /* Max width to match other form fields */
+  }
+  
+  
+  .form-group input::placeholder,
+  .form-group select option:first-child {
+    color: #413F3D; 
+    font-weight: lighter;
+    font-size: medium;
+  }
+  
+  /* Forgot Password link styling */
+  .forgot-password {
+    font-size: 0.875rem; /* Smaller font size */
+    color: #413F3D; /* Light font color */
+    text-align: right; /* Align to the right */
+    width: 100%; /* Full width to align properly */
+    max-width: 450px; /* Max width to match fields */
+    margin-bottom: 1rem; /* Space above the Sign In button */
+    display: flex;
+    justify-content: flex-end; /* Align link to the end */
+  }
+  
+  /* Styling for the Sign In button */
+  .signin-button {
+    width: 100%; /* Full width button to match fields */
+    max-width: 470px; /* Max width to match fields */
+    height: 50px; /* Same height as fields */
+    padding: 0.5rem; /* Padding inside button */
+    background-color: #465767; /* Button background color */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 20px; /* Standard font size */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    font-weight: bold;
+  }
+  
+  /* Button hover effect */
+  .signin-button:hover {
+    background-color: #112333; /* Darker blue on hover */
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 400px) {
+    .login-form {
+      width: 100%; /* Full width on small screens */
+      padding: 1rem; /* Less padding on small screens */
+    }
+  }
