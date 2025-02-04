@@ -42,6 +42,12 @@ const AdminDashboard = ({ userName, userEmail }) => {
           >
             ANALYTICS DASHBOARD
           </button>
+          <button 
+            className="menu-item" 
+            onClick={() => navigate('/users-list')}  // Navigate to Users List page
+          >
+            USERS LIST
+          </button>
         </div>
         <button className="logout-button" onClick={handleLogout}>LOG OUT</button>
       </div>

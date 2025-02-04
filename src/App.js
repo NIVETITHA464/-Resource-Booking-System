@@ -7,7 +7,8 @@ import Activeslots from './Pages/Activeslots';
 import ClassroomDetail from './Pages/ClassroomDetail';
 import PastReservations from './Pages/PastReservations';
 import AdminDashboard from './Pages/AdminDashboard';
-import AnalyticsDashboard from './Pages/AnalyticsDashboard'; // Ensure this is imported
+import AnalyticsDashboard from './Pages/AnalyticsDashboard';
+import UsersList from './Pages/UsersList'; 
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
           <Route path="/classroom-detail" element={<ClassroomDetail />} />
           <Route path="/past-reservations" element={<PastReservations />} />
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
-          <Route path="/analytics-dashboard" element={<AnalyticsDashboard />} /> {/* Ensure this route exists */}
+          <Route path="/analytics-dashboard" element={<AnalyticsDashboard />} />
+          <Route path="/users-list" element={<UsersList />} /> {/* Add the new route for UsersList */}
         </Routes>
       </div>
     </Router>
